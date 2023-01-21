@@ -58,7 +58,7 @@ body{
 }
 .btn  {
     width: 160px;
-    padding: 5px;
+    padding: 6px;
     border: 1px solid var(--price);
     border-radius: 45px;
 }
