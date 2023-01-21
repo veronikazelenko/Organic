@@ -18,15 +18,14 @@ body{
     font-size: 18px;
 }
 .header { 
-    /* margin: 40px 30px; */
-}
+    margin: 40px 0px;
+} 
 .container {
-    max-width: 1440px;
+    max-width: 1380px;
     margin-left: auto;
     margin-right: auto; 
 }
 .header__menu {
-    margin: 40px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;  
@@ -42,16 +41,23 @@ body{
 }
 .nav__item {
     list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0.36px;
+}
+.nav__item:last-child {
+    margin-left: 20px;
 }
 .nav__link {
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
     color: var(--main);
+    transition: 0.2s ease-in-out;
 }
 .nav__link:hover{
     padding: 30px 0;
     color: var(--light);
+    transition: .2s ease-in-out;
 }
 .header__btn {
     display: flex;
@@ -61,10 +67,8 @@ body{
     padding: 6px;
     border: 1px solid var(--price);
     border-radius: 45px;
+    margin-right: 30px;
 }
-/* .btn:hover{
-    transform: scale(1.2);
-} */
 .btn__link{
     display: flex;
     gap: 10px;
@@ -72,27 +76,30 @@ body{
     text-decoration: none;
     color: var(--main);
 }
+.btn__link img{
+    transition: 0.2s ease-in-out;
+}
 .btn__link img:hover{
    transform: scale(1.1);
+   transition: 0.2s ease-in-out;
 } 
 .btn__item{
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    transition: color 0.2s ease-in-out;
 }
 .btn__item:hover{
     color: var(--light); 
+    transition: color 0.2s ease-in-out;
 }
 .promo {
-    background: url(./images/bg-promo.png);
-    /* background-color: #F2F0F1; */
-    /* background-size: cover; */
-    height: 913px;
-    max-width: 1440px;  
+    background: url(./images/bg-promo.png) no-repeat;
+    background-size: cover;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto;   
 }
 .promo__content {
-    margin: 0px 30px; 
+    padding-top: 220px;
 }
 .subtitle{
     font-family: 'Yellowtail', cursive;
@@ -101,10 +108,9 @@ body{
     line-height: 65px;
     font-weight: 400;
     letter-spacing: 0.36px;
-    text-align: left;
-    padding-top: 220px;
+    text-align: left;    
 }
-.text{
+.promo__text{
     font-family: 'Roboto', sans-serif;
     color: var(--main);
     font-size: 70px;
@@ -112,6 +118,10 @@ body{
     line-height: 84px;
     letter-spacing: 0.36px;
     text-align: left;
+    margin-top: 15px;
+}
+.promo__btn{ 
+    padding-bottom: 255px;
 }
 .button {
     display: flex;
@@ -129,7 +139,13 @@ body{
     font-weight: 400;
     line-height: 32px;
     letter-spacing: 0.36px;
-    margin-top: 30px 
+    margin-top: 30px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.button:hover{
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
 }
 .button--yellow {
     background-color: var(--yellow);
@@ -141,4 +157,62 @@ body{
     border-radius: 50px;
     background-color: var(--main);
     padding: 10px; 
+    transition: 0.2s ease-in-out;
+}
+.arrow:hover{
+    transform: rotate(180deg);
+    transition: 0.2s ease-in-out;
+}
+.offer {
+    margin-top: 145px;
+    margin-bottom: 135px; 
+}
+.offer__content{
+    display: flex;
+    gap: 50px;
+    
+}
+.offer__left {
+    width: 665px;
+    height: 380px;
+    background: url(./images/bg-natural.png) no-repeat;
+    background-size: contain;
+    padding-top: 105px;
+    padding-left: 55px; 
+}
+
+.offer__subtitle {
+    font-family: 'Yellowtail', cursive;
+    color: var(--white);
+    font-size: 36px;
+    line-height: 65px;
+    font-weight: 400;
+    letter-spacing: 0.36px;
+    text-align: left;   
+}
+.offer__l-text {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: 0.36px;
+    color: var(--white);
+}
+.offer__right {
+    width: 665px;
+    height: 380px;
+    background: url(./images/bg-offer.png) no-repeat;
+    background-size: contain;
+    padding-top: 105px;
+    padding-left: 55px;
+}
+.offer__r-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: 0.36px;
+    color: var(--main);
 }
