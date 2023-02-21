@@ -128,11 +128,12 @@ body{
 .button {
     display: flex;
     justify-content:space-between;
+    gap: 20px;
     padding-left: 30px;
     padding-right: 10px;
     align-items: center;
-    width: 220px;
-    height: 80px;
+    width: auto;
+    height: 82px;
     border: none;
     border-radius: 15px;
     color: var(--main);
@@ -394,30 +395,24 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
-.container {
-}
+
 .review__content {
    text-align: center;
 }
 .review__top {
     padding-top: 130px;
 }
-.subtitle {
-}
-.title {
-}
+
 .review__photo{
     margin: 38px 0 18px 0;
 }
-.review__rating {
-}
+
 .bigStars {
     width: 22px;
     height: 20.5px;
     margin-bottom: 20px;
 }
-.text {
-}
+
 .caption{
     width: 965px;
     margin-left: auto;
@@ -481,4 +476,56 @@ body{
     text-align: center;
     letter-spacing: 0.36px;
     color: var(--main);
+}
+.products {
+    background: var(--main);
+}
+.products__content {
+    padding-top: 140px;
+}
+.products__top {
+    margin-bottom: 44px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+    align-items: flex-end;
+}
+.title--white {
+    color: var(--white);
+}
+.products__main {
+    display: grid;
+    grid-template-columns: 447px 447px 447px;
+    grid-template-rows: 590px;
+    grid-gap: 20px;
+    padding-bottom: 160px;
+}
+.eco {
+    background: url(./images/eco.png) no-repeat;
+    background-size: contain;
+    margin-left: auto;
+    margin-right: auto; 
+}
+.eco__content {
+    display: flex;
+}
+.eco__box {
+    border: 1px solid var(--white);
+    border-radius: 30px;
+    background: var(--white);
+    padding: 40px 40px 55px 60px;
+    position: relative;
+    margin: 40px 0px 40px 660px;
+    z-index: 1;
+}
+.eco__title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 32px;
+    letter-spacing: 0.36px;
+    text-transform: capitalize;
+    color:var(--main);
+    padding-top: 15px;
 }
