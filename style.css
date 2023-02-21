@@ -450,12 +450,12 @@ body{
     margin-top: 105px;
     padding-bottom: 155px;
     display: flex;
-    gap: 26px;
+    gap: 32px;
     justify-content: center;
 }
 .review__char {
     padding-top: 82px;
-    box-shadow: inset 0 0 0px, 0 0 0  6px var(--light);
+    box-shadow: inset 0 0 0px, -1px -1px 0 5px var(--light);
     border: 5px solid var(--white);
     border-radius: 50%;
     background: var(--round);
