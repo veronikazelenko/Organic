@@ -8,6 +8,8 @@
     --yellow: #EFD372;
     --line: #E0E0E0;
     --grey:#F9F8F8;
+    --catal: #EFF6F1;
+
 }
 *{
     margin: 0;
@@ -18,6 +20,9 @@ body{
     font-family:'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 18px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .header { 
     margin: 40px 0px;
@@ -59,7 +64,7 @@ body{
 .nav__link:hover{
     padding: 30px 0;
     color: var(--light);
-    transition: .2s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 .header__btn {
     display: flex;
@@ -273,13 +278,13 @@ body{
 .image{
     padding:25px
 }
-.vector-1{
+.vector1{
     position: absolute;
     margin-top: 36px;
     margin-left: 20px;
     opacity: 60%;
 }
-.vector-2{
+.vector2{
     position: absolute;
     margin-top: 48px;
     margin-left: 22px; 
@@ -302,6 +307,7 @@ body{
     background-color:var(--main);
     color:  var(--white);
     width: 199px;
+    margin: 0;
 }
 .organic__content {
     margin-top: 120px;
@@ -321,7 +327,7 @@ body{
     background-color: var(--grey);
     border-radius: 25px;
 }
-.small-btn {
+.smallbtn {
     height: 37px;
     width: 118px;
     background-color: var(--main);
@@ -338,7 +344,7 @@ body{
     cursor: pointer;
     transition: 0.2s ease-in-out;
 }
-.small-btn:hover{
+.smallbtn:hover{
     transform: scale(1.1);
     transition: 0.2s ease-in-out;
 }
@@ -402,17 +408,14 @@ body{
 .review__top {
     padding-top: 130px;
 }
-
 .review__photo{
     margin: 38px 0 18px 0;
 }
-
-.bigStars {
+.bigstars {
     width: 22px;
     height: 20.5px;
     margin-bottom: 20px;
 }
-
 .caption{
     width: 965px;
     margin-left: auto;
@@ -515,7 +518,7 @@ body{
     background: var(--white);
     padding: 40px 40px 55px 60px;
     position: relative;
-    margin: 40px 0px 40px 660px;
+    margin: 40px 0px 40px 670px;
     z-index: 1;
 }
 .eco__title {
@@ -528,4 +531,81 @@ body{
     text-transform: capitalize;
     color:var(--main);
     padding-top: 15px;
+}
+.catalog {
+    background: var(--catal); 
+}
+.catalog__content {
+    display: flex;
+    gap: 30px;
+    padding: 140px 0 140px 0;
+}
+.picture {
+    width: 460px;
+    height: 580px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.picture--left{
+    background: url(./images/fruit\ juice.png);
+}
+.picture--middle{
+    background: url(./images/organic\ food.png);
+}
+.picture--right{
+    background: url(./images/nuts\ cookies.png);
+}
+.catalog__btn {
+    width: 281px;
+    height: 95px;
+    background:var(--white);
+    border: 1px var(--white);
+    border-radius: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: 0.36px;
+    color: var(--main);
+    transition: 0.2s ease-in-out;
+ }
+.catalog__btn:hover{
+    padding: 30px;
+    color: var(--light); 
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+}
+.form {
+}
+.container {
+}
+.form__content {
+    background: url(./images/bg-form.png) no-repeat;
+    margin-top: 30px;
+    padding: 91px 70px;
+    display: flex;
+    justify-content: space-between;
+}
+.form__right{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-right: 10px;
+}
+.form__input{
+    width: 350px;
+    height: 82px;
+    border: 1px solid #CCCCCC;
+    border-radius: 16px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    letter-spacing: 0.36px;
+    padding: 26px 30px;
+    color: var(--article);
 }
