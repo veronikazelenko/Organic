@@ -579,10 +579,6 @@ body{
     transform: scale(1.1);
     transition: 0.2s ease-in-out;
 }
-.form {
-}
-.container {
-}
 .form__content {
     background: url(./images/bg-form.png) no-repeat;
     margin-top: 30px;
@@ -610,10 +606,6 @@ body{
     padding: 26px 30px;
     color: var(--article);
 }
-.footer {
-}
-.container {
-}
 .footer__content {
     display: flex;
     justify-content: center;
@@ -622,8 +614,6 @@ body{
 .footer__left {
     text-align: right;
     padding-right: 20px;
-    /* padding-bottom: 40px; */
-    /* border-right: 1px solid var(--rectang); */
 }
 .footer__title {
     font-family: 'Roboto';
@@ -634,6 +624,7 @@ body{
     letter-spacing: 0.36px;
     color:var(--main);
     margin-bottom: 20px;
+    text-transform: capitalize;
 }
 .row {
     font-family: 'Open Sans';
@@ -675,10 +666,6 @@ body{
 .footer__logo {
     margin-bottom: 45px;
 }
-.logo {
-}
-.text {
-}
 .social{
     display: flex;
     justify-content: center;
@@ -697,9 +684,8 @@ body{
 }
 .footer__right {
     padding-left: 20px;
-    /* border-left: 1px solid var(--rectang); */
 }
-
-.text--margin{
+.text--footer{
     margin-bottom: 24px;
+    text-transform: capitalize;
 }
