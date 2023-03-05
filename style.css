@@ -450,7 +450,7 @@ body{
     border-bottom: 2px solid ;
 }
 .review__bottom {
-    margin-top: 100px;
+    padding-top: 100px;
     padding-bottom: 155px;
     display: flex;
     gap: 30px;
@@ -617,8 +617,6 @@ body{
 }
 .footer__content {
     display: flex;
-    /* justify-content: space-; */
-    /* gap: 10px; */
     margin: 83px 0px;
 }
 .footer__left {
