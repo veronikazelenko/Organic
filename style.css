@@ -27,6 +27,7 @@ body{
 }
 .header { 
     margin: 43px 0px;
+    position: relative;
 } 
 .container {
     max-width: 1380px;
@@ -41,6 +42,62 @@ body{
 .header__logo{
     display: flex;
     align-items: center;
+}
+.burger__input{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 15px;
+    right: 20px;
+    opacity: 0;
+    z-index: 3;
+    cursor: pointer;
+}
+.burger__input:checked ~ .burger__menu { 
+    z-index: 2;
+}
+.burger__input:checked ~ .burger__menu span{
+    background-color: var(--main);
+}
+.burger__input:checked ~ .burger__menu span:nth-child(1){
+    visibility: hidden;
+}
+.burger__input:checked ~ .burger__menu span:nth-child(2){
+    transform: rotate(45deg);
+    top: 10px;
+}
+.burger__input:checked ~ .burger__menu span:nth-child(3){
+    transform: rotate(-45deg);
+    top: 10px;
+}
+.burger__input:checked ~ .nav__menu{
+    visibility: visible;
+    right: 0;
+}
+.burger__menu{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 15px;
+    right: 20px;
+    z-index: 0;
+    display: none;
+}
+.burger__menu span{
+    width: 100%;
+    height: 5px;
+    background-color: var(--main);
+    position: absolute;
+    transition: background-color 1s linear;
+}
+.burger__menu span:nth-child(1){
+    top: 0;
+}
+.burger__menu span:nth-child(2){
+    top: 10px;
+}
+.burger__menu span:nth-child(3){
+    top: 20px;
 }
 .nav__menu {
     display: flex;

@@ -179,3 +179,35 @@
         max-width: 1024px;
     }
 }
+@media (max-width: 768px){
+    .burger__input{
+        display: inline-block;
+    }
+    .burger__menu{
+        display: inline-block;
+    }
+    .nav__menu {
+        z-index: 1;
+        display: grid;
+        row-gap: 20px;
+        align-content: center;
+        justify-content: start;
+        width: 25vw; 
+        height: 50vh;
+        position: absolute;
+        right: -26vw;
+        top:-15px;
+        font-size: 36px;
+        visibility: hidden;
+        transition: right 1s, visibility 5s linear ;
+    }
+    .nav__item{
+        font-weight: bold;
+    }
+    .nav__item:last-child {
+        margin-left: 0px;
+    }
+    .nav__link:hover{
+        color: var(--light);
+    }
+}
