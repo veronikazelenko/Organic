@@ -13,7 +13,6 @@
     }
     .promo__content {
         padding-top: 100px;
-        text-align: left; 
     }
     .promo__text{
         font-size: 60px;
@@ -85,7 +84,7 @@
         padding: 30px 50px 0 50px;
     }
     .caption{
-        max-width:821px;
+        width:821px;
     }
     .client {
         padding-bottom: 50px;
@@ -219,7 +218,6 @@
     }
     .promo__text{
         font-size: 48px;
-        font-weight: 700;
         line-height: 54px;
     }
     .promo__btn{ 
@@ -244,8 +242,6 @@
     .offer__textLeft {
         font-size: 26px;
         line-height: 36px;
-        letter-spacing: 0.36px;
-        color: var(--white);
     }
     .offer__right {
         height: 180px;
@@ -272,12 +268,8 @@
         margin-top: 15px;
     }
     .introduct__img{
-        border-color:var(--white);
-        border-radius: 20px;
-        background-color: var(--white);
         width: 80px;
         height: 80px;
-        position: relative;
     }
     .image{
         padding:20px 15px;
@@ -293,8 +285,6 @@
     .introduct__title {
         font-size: 23px;
         line-height: 35px;
-        letter-spacing: 0.36px;
-        color:var(--main);
         margin-bottom: 5px;
     }
     .introduct__btn {
@@ -314,7 +304,6 @@
         padding: 0 40px;
     }
     .organic__bottom {
-        /* margin: 20px 10px 22px 10px ; */
         margin: 0px 10px ;
     }
     .client {
@@ -413,5 +402,265 @@
     }
     iframe{
         max-width: 768px;
+    }
+}
+@media (max-width: 375px){
+    .header__logo{
+        width: 40%;
+    }
+    .burger__input{
+        height: 20px;
+        width: 20px;
+        top: 5px;
+    }
+    .burger__menu{
+        height: 20px;
+        width: 20px;
+        top: 5px;
+    }
+    .burger__menu span{
+        height: 3px;
+    }
+    .burger__menu span:nth-child(2){
+        top: 8px;
+    }
+    .burger__menu span:nth-child(3){
+        top: 16px;
+    }
+    .nav__menu {
+        top:-123px;
+    }
+    .nav__item {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .promo {
+        background-size: 100% auto;
+    }
+    .promo__content {
+        padding-top: 20px;
+    }
+    .subtitle{
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .promo__text{
+        font-size: 26px;
+        line-height: 34px;
+        margin-top: 5px;
+    }
+    .button {
+        height: 42px;
+        gap: 10px;
+        font-size: 12px;
+        margin-top: 10px;
+        line-height: 20px;
+    }
+    .arrow{
+        width: 28px;
+        height: 28px;
+        padding: 6px; 
+    }
+    .promo__btn {
+        padding-bottom: 25px;
+    }
+    .offer__content {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        gap: 20px;
+    }
+    .offer__left {
+        height: auto;
+        padding: 15px 0  10px 10px; 
+    }
+    .offer__subtitle {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .offer__textLeft {
+        font-size: 16px;
+        line-height: 18px;
+        padding-bottom: 10px;
+    }
+    .offer__right {
+        height: auto;
+        padding: 15px 0  10px 10px;      
+    }
+    .offer__textRight {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .title {
+        font-size: 22px;
+        line-height: 30px;
+        margin-bottom: 0px;
+    }
+    .introduct__right {
+        width: auto;
+        margin-top: 15px;
+    }
+    .text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .introduct__bottom {
+        gap: 10px;
+    }
+    .introduct__img {
+        width: 50px;
+        height: 50px;
+        border-radius: 15px;
+    }
+    .image {
+        width: 50px;
+        padding: 10px 10px;
+    }
+    .vector1{
+        width: 35%;
+        margin-top: 18px;
+        margin-left: 3px;
+    }
+    .vector2{
+        width: 35%;
+        margin-top: 18px;
+        margin-left: 3px;
+    }
+    .introduct__title {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .introduct__btn {
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+    .organic__content {
+        margin-bottom: 20px;
+    }
+    .organic__top {
+        margin-bottom: 20px;
+    }
+    .organic__prod {
+        grid-template-columns: 340px ;
+        grid-template-rows: 460px 460px 460px 460px 460px 460px;
+    }
+    .review__top {
+        padding: 20px 15px;
+    }
+    .bigStars {
+        margin-bottom: 20px;
+    }
+    .caption {
+        width: 307px;
+    }
+    .name {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .review__bottom {
+        padding-top: 0px;
+        padding-bottom: 25px;
+        gap: 20px;
+    }
+    .review__char {
+        padding-top: 10px;
+        width: 70;
+        height: 70px;
+        box-shadow: inset 0 0 0px, -1px -1px 0 3px var(--light);
+        border: 3px solid var(--white)
+    }
+    .number {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .descript {
+        font-size: 10px;
+        line-height: 16px;
+    }
+    .eco {
+        background-size: auto;
+    }
+    .eco__box {
+        margin: 30px 0;
+    }
+    .eco__title {
+        font-size: 16px;
+        line-height: 22px;
+        padding-top: 5px;
+    }
+    .catalog__content {
+        flex-direction: column;
+        padding: 20px 20px;
+    }
+    .picture {
+        width: auto;
+        height: auto;
+    }
+    .catalog__btn {
+        margin: 60px 0;
+    }
+    .title--form {
+        font-size: 16px;
+        line-height: 22px;
+        margin-left: 5px;
+        text-align: center;
+    }
+    .form__right {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        padding-right: 10px;
+    }
+    .form__input {
+        width: 200px;
+        height: 42px;
+        font-size: 13px;
+        padding: 22px 15px;
+    }
+    .footer__content {
+        display: flex;
+        flex-direction: column;
+        margin: 5px 0px 15px 0px; 
+    }
+    .footer__title {
+        font-size: 18px;
+        line-height: 22px;
+        margin-top: 10px;
+    }
+    .footer__row {
+        line-height: 20px;
+        margin-top: 5px;
+    }
+    .contact__link {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .footer__left {
+        text-align: center;
+        padding-right: 0px;
+        border-bottom:  1px solid var(--rectang);
+    }
+    .footer__middle {
+        text-align: center;
+        border-left: none;
+        border-right: none;
+        border-bottom:  1px solid var(--rectang);
+        padding: 0 5px 25px 5px;
+    }
+    .footer__logo {
+        width: 40%;
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+    .social {
+        gap: 20px;
+        margin-top: 24px;
+    }
+    .footer__right {
+        text-align: center;
+        padding-left: 0px;
+    }
+    iframe {
+        max-width: 375px;
+        max-height: 362px;
     }
 }
